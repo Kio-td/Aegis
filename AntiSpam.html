@@ -171,7 +171,7 @@
                         <li><a href="GaiusCicereius.html">Gaius Cicereius</a></li><li>AutoModeration</li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="AutoModeration.html" title="AutoModeration" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="MandatoryFilters.html" title="Mandatory Filters" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Slowmode.html" title="Slowmode" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="AutoModeration.html" title="AutoModeration" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Mandatory.html" title="Mandatory" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="BotLog.html" title="Bot Log" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -183,44 +183,78 @@
             <div class="main-content">
                 
 <p></p>
-<p class="rvps6"><span class="rvts23">Gaius allows your staff to purge large amounts of messages in a text channel via command.</span></p>
-<p class="rvps9"><span class="rvts20"><br/></span></p>
-<div class="rvps6"><table border="1" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
+<p class="rvps2"><span class="rvts11">We offer a highly customizable anti-spam system. By default the settings are pretty ideal but if you'd like to configure them yourself you can view that information here.</span></p>
+<p class="rvps2"><span class="rvts28"><br/></span></p>
+<p class="rvps2"><span class="rvts38">Default settings</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+<li style="list-style-image: url('lib/21.bmp')" class="rvps2"><span class="rvts11">5</span><span class="rvts31"> - </span><span class="rvts11">Spam Limit</span></li>
+<li style="list-style-image: url('lib/21.bmp')" class="rvps2"><span class="rvts11">5</span><span class="rvts31"> - </span><span class="rvts11">Spam Time Limit</span></li>
+<li style="list-style-image: url('lib/21.bmp')" class="rvps2"><span class="rvts11">1 </span><span class="rvts31">-</span><span class="rvts11"> Spam Trigger For Mute</span></li>
+<li style="list-style-image: url('lib/21.bmp')" class="rvps2"><span class="rvts11">2</span><span class="rvts31"> -</span><span class="rvts11"> Spam Trigger For Kick</span></li>
+<li style="list-style-image: url('lib/21.bmp')" class="rvps2"><span class="rvts11">5</span><span class="rvts31"> - </span><span class="rvts11">Spam Trigger For Ban</span></li>
+</ul>
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<p class="rvps2"><span class="rvts38">Configuration</span></p>
+<div class="rvps2"><table border="1" cellpadding="4" cellspacing="0" style="border-width: 0px; border-spacing: 0px;">
 <tr valign="top">
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts25">Command</span></p>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts40">Command</span></p>
 </td>
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts25">Description</span></p>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts40">Description</span></p>
 </td>
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts25">Role Needed</span></p>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts40">Example</span></p>
 </td>
 </tr>
 <tr valign="top">
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!module</span><span class="rvts27"> Purger</span></p>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam limit </span><span class="rvts41">number</span></p>
 </td>
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">Enables the Purger module</span></p>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">Amount of messages to reach before triggering</span></p>
 </td>
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">Admin</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!purge </span><span class="rvts27">amount</span></p>
-</td>
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">Purges </span><span class="rvts26">X</span><span class="rvts6"> messages from a channel</span></p>
-</td>
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">Moderator/Admin</span></p>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam limit </span><span class="rvts41">5</span></p>
 </td>
 </tr>
 <tr valign="top">
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!purge </span><span class="rvts27">mention </span><span class="rvts35">amount</span></p>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam time </span><span class="rvts41">number</span></p>
 </td>
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">Purges </span><span class="rvts26">X</span><span class="rvts6"> messages from a user in a channel</span></p>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">Amount of time in seconds</span></p>
 </td>
-<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">Moderator/Admin</span></p>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam time </span><span class="rvts41">5</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam time </span><span class="rvts41">number</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">How many spam triggers before a mute</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam time </span><span class="rvts41">1</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam kick </span><span class="rvts41">number</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">How many spam triggers before a kick</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam kick </span><span class="rvts41">2</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam ban </span><span class="rvts41">number</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">How many spam triggers before a ban</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam ban </span><span class="rvts41">3</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam cooldown </span><span class="rvts41">number</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">How long till their strikes are forgotten</span></p>
+</td>
+<td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 2px 5px;"><p class="rvps2"><span class="rvts6">!auto spam cooldown </span><span class="rvts41">5</span></p>
 </td>
 </tr>
 </table>
 </div>
-<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
 <p class="rvps2"><span class="rvts11"><br/></span></p>
 <p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts13">Created with the Personal Edition of HelpNDoc: </span><a class="rvts14" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Create help files for the Qt Help Framework</a></p>
