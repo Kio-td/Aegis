@@ -1,1 +1,1 @@
-[]
+[{ "id": "70624035499E40B5AA16842C98145E39", "parent" : "#", "text": "Allow users to assign themselves roles", "a_attr": {"href": "RoleHandling.html", "data-related": "[]"} },{ "id": "7AE993B5711844AB80631541E6B02E43", "parent" : "70624035499E40B5AA16842C98145E39", "text": "How to auto assign role(s) on join?", "a_attr": {"href": "RoleHandling.html", "data-related": "[]"} }]
